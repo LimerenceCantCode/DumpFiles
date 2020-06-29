@@ -1,0 +1,54 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+import codersafterdark.reskillable.api.unlockable.Trait;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.EntityDamageSource;
+//import net.minecraft.util.EntityDamageSourceIndirect;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+
+public class TraitDamageResist extends Trait {
+		public TraitDamageResist() {
+			super(new ResourceLocation("AdditionalTraits", "damage_resist"), 3, 2, 
+	//I have no idea how to make reskillable read this as a valid trait, do i have to set up a custom registry handler?
+					new ResourceLocation("AdditionalTraits", "AdditionalTraits"), 8, 
+					new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+			//just a ctrl c ctrl v from an existing trait, obviously customize values once it works.
+		}
+	
+	
+//as my understanding of it goes, a different script masterminds 		
+		
+		public void onHurt(LivingHurtEvent event) {
+			
+//pretty sure this means "if the event is not canceled" again, monkey see monkey code
+			
+			if (!event.isCanceled()) {
+				if (event.getEntityLiving() instanceof EntityPlayer) {
+					
+					
+					//if !event.getSource instanceof EntityDamageSourceIndirect
+					
+					//an attempt at creating a "DoT Condition" aka only work if the player is withering, poisoned, etc.
+					
+					
+					if (event.getSource() instanceof EntityDamageSource && !event.getSource().isUnblockable()) {}
+					
+						float amount = event.getAmount();
+			
+						float ignored = amount;
+						
+						// / 5 after, 100% dr is very easy to see.
+						
+						event.setAmount(amount - ignored);
+		}
+	}
+	}
+
+}
+
+
+//alternative: OnUnlockEvent setBaseValue RESISTANCE 
+//has the benefit of showing DR on armor bar for some resource packs.
+//and not checking the full script everytime an entity/player is damaged
