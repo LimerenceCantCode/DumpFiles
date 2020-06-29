@@ -1,0 +1,38 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+
+import codersafterdark.reskillable.api.unlockable.Trait;
+import net.minecraft.entity.monster.IMob;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+
+
+import net.minecraft.util.ResourceLocation;
+
+public class TraitCombatXP extends Trait {
+	public TraitCombatXP() {
+		super(new ResourceLocation("AdditionalTraits", "combat_xp"), 3, 2, new ResourceLocation("reskillable", "attack"),
+				8, new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+	}
+
+	public void onKillMob(LivingDeathEvent event) {
+		int mobHP = (int) event.getEntityLiving().getMaxHealth();
+		int playerHP = (int) ((EntityPlayer) event.getSource().getTrueSource()).getMaxHealth();
+		int givenXP = mobHP / 10;
+
+		
+		if (!event.isCanceled() && event.getEntity() instanceof IMob
+				&& event.getSource().getTrueSource() instanceof EntityPlayer) 
+		{
+			((EntityPlayer) event.getSource().getTrueSource()).addExperience(givenXP);
+		}
+
+		if (!event.isCanceled() && mobHP > playerHP * 10 && event.getSource().getTrueSource() instanceof EntityPlayer)
+		{
+			((EntityPlayer) event.getSource().getTrueSource()).addExperience(mobHP);
+		}
+		
+		
+	}
+}
