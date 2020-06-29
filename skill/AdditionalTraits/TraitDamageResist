@@ -18,7 +18,7 @@ public class TraitDamageResist extends Trait {
 		}
 	
 	
-//as my understanding of it goes, a different script masterminds 		
+//as my understanding of it goes, a different script masterminds determining if the trait script is "active" or not		
 		
 		public void onHurt(LivingHurtEvent event) {
 			
