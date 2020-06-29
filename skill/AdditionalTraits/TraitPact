@@ -1,0 +1,40 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+import java.util.UUID;
+
+import codersafterdark.reskillable.api.event.UnlockUnlockableEvent;
+import codersafterdark.reskillable.api.unlockable.Trait;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.ai.attributes.IAttributeInstance;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+
+public class TraitPact extends Trait {
+	
+	public TraitPact() {
+		super(new ResourceLocation("AdditionalTraits", "pact"), 3, 2, new ResourceLocation("reskillable", "attack"),
+			8, new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+		}
+
+	public static final UUID MODIFIER_UUID = UUID.fromString("000d5ef0-b92b-11ea-81d1-1ff5984171f7");
+	
+	
+	public void onUnlock(UnlockUnlockableEvent event) {
+	
+	EntityPlayer player = (EntityPlayer) event.getEntity();
+	IAttributeInstance attackSpeed = player.getEntityAttribute(SharedMonsterAttributes.ATTACK_SPEED);
+	AttributeModifier modifier = attackSpeed.getModifier(MODIFIER_UUID);
+	modifier = new AttributeModifier(MODIFIER_UUID, "Pact Attack Speed Increase",	1.0D, 0);
+		
+		if (!event.isCanceled()) {
+			
+
+
+			attackSpeed.applyModifier(modifier);
+		}
+		}
+	
+	
+}
