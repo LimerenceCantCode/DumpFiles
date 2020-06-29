@@ -18,7 +18,7 @@ public class TraitBloodSacrifice extends Trait {
 				new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
 	}
 	
-															//554f3929-4193-4ae5-a4da-4b528a89ca32
+															
 	public static final UUID MODIFIER_UUID = UUID.fromString("29cc66d5-b9b6-4f77-9f52-37ca5275cb79");
 	
 		
