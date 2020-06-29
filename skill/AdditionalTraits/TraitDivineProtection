@@ -1,0 +1,42 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import codersafterdark.reskillable.api.unlockable.Trait;
+
+
+public class TraitDivineProtection extends Trait {
+	public TraitDivineProtection() {
+		super(new ResourceLocation("AdditionalTraits", "divine_protection"), 3, 2, new ResourceLocation("reskillable", "attack"),
+				8, new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+	}
+	
+
+	public void onHurt(LivingHurtEvent event) {
+		if (!event.isCanceled()) {
+			EntityLivingBase e = event.getEntityLiving();
+			if (e.getEntityData().getInteger("skillable:UndershirtCD") == 0 && e.getHealth() >= 6.0F
+					&& event.getAmount() >= e.getMaxHealth() / 3 && !event.getSource().isUnblockable()) {
+				event.setAmount(e.getAbsorptionAmount() - 5.0F);
+				e.getEntityData().setInteger("skillable:UndershirtCD", 200);
+			}
+		}
+	}
+		
+	
+	//honest try this one out, onPlayerTick for events
+	@Deprecated
+	public void onHurt2(LivingHurtEvent event) {
+		EntityLivingBase e = event.getEntityLiving();
+		
+		if ((e.getHealth() < e.getMaxHealth()) && (e.ticksExisted % 20 == 0)) {
+			event.setAmount(e.getAbsorptionAmount() - 5.0F);
+		
+		}
+		}
+	
+	
+	
+}
