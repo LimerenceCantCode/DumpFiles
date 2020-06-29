@@ -1,0 +1,56 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+import java.util.UUID;
+
+import codersafterdark.reskillable.api.event.UnlockUnlockableEvent;
+import codersafterdark.reskillable.api.unlockable.Trait;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.ai.attributes.IAttributeInstance;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+
+public class TraitBloodSacrifice extends Trait {
+	public TraitBloodSacrifice() {
+		super(new ResourceLocation("AdditionalTraits", "blood_sacrifice"), 3, 2, 
+				new ResourceLocation("reskillable", "attack"), 8, 
+				new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+	}
+	
+															//554f3929-4193-4ae5-a4da-4b528a89ca32
+	public static final UUID MODIFIER_UUID = UUID.fromString("29cc66d5-b9b6-4f77-9f52-37ca5275cb79");
+	
+		
+	public void onUnlock(UnlockUnlockableEvent event) {
+	
+	EntityPlayer player = (EntityPlayer) event.getEntity();
+	IAttributeInstance maxHealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
+	AttributeModifier modifier = maxHealth.getModifier(MODIFIER_UUID);
+	modifier = new AttributeModifier(MODIFIER_UUID, "Blood Sacrifice Max HP Reduction",	-4.0D, 0);
+		
+		if (!event.isCanceled()) {
+			
+		maxHealth.applyModifier(modifier);
+			
+			
+			
+			
+			
+			//EntityLivingBase e = event.getEntityLiving();
+		//float BaseHP = e.getMaxHealth();
+		//PlayerEvent.setAmount(e.getMaxHealth() - (BaseHP-2));
+		
+	}
+	
+	
+	
+
+		//modifier = new AttributeModifier(MODIFIER_UUID, "Blood Sacrifice Max HP Reduction",
+			//	prevMaxHealthDamage - maxHealthDamage, 0);
+	
+	
+}
+	
+}
+
