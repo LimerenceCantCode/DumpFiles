@@ -65,7 +65,7 @@ Stacktrace:
 Details:
 	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
 	Entity ID: 2241
-	Entity Name: Zellog
+	Entity Name: Player
 	Entity's Exact location: 229.62, 73.00, 233.72
 	Entity's Block location: World: (229,73,233), Chunk: (at 5,4,9 in 14,14; contains blocks 224,0,224 to 239,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
 	Entity's Momentum: 0.00, -0.08, 0.00
