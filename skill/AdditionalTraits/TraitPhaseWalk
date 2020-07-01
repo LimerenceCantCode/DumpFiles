@@ -1,0 +1,73 @@
+package limerence.AdditionalTraits.skill.AdditionalTraits;
+
+
+import codersafterdark.reskillable.api.unlockable.Trait;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
+import net.minecraft.world.GameType;
+
+
+
+
+public class TraitPhaseWalk extends Trait {
+	private static final String TAG_COOLDOWN = "skillable:PhaseWalkCD";
+	private static final String TAG_ACTIVETIMER = "skillable:PhaseWalkTime";
+	
+	public TraitPhaseWalk() {
+		super(new ResourceLocation("AdditionalTraits", "phase_walk"), 1, 1, 
+				new ResourceLocation("AdditionalTraits", "AdditionalTraits"), 1, 
+				new String[]{"reskillable:attack|1", "reskillable:defense|1", "reskillable:agility|1"});
+	}
+	
+	boolean Active = false;
+	GameType Spec = GameType.SPECTATOR;
+	GameType Surv = GameType.SURVIVAL;
+	
+	@Override
+	public void onHurt(LivingHurtEvent event) {
+		if (!event.isCanceled()) {
+
+			EntityLivingBase e = event.getEntityLiving();
+			
+			
+				if (e.getEntityData().getInteger(TAG_COOLDOWN) == 0 && (Active = false) && e.isSneaking() && event.getSource().isUnblockable() ) 
+				{((EntityPlayer) e).setGameType(Spec);
+					e.getEntityData().setInteger(TAG_COOLDOWN, 600);
+					e.getEntityData().setInteger(TAG_ACTIVETIMER, 40);
+					Active = true; 
+				}
+				//.isInstant(false)
+        //find a way to specify DoT effects?
+        
+				} 
+				}
+	
+	//40-60 ticks for 2-3 seconds
+	@Override
+	public void onPlayerTick(PlayerTickEvent event) {
+		int cd = event.player.getEntityData().getInteger(TAG_COOLDOWN);
+		int TimeLeft = event.player.getEntityData().getInteger(TAG_ACTIVETIMER);
+		
+		if (Active = true) {
+			if (TimeLeft > 0) {event.player.getEntityData().setInteger(TAG_ACTIVETIMER, TimeLeft - 1);}
+			else {event.player.setGameType(Surv); Active = false;}
+				
+						   }
+		if (cd > 0) {event.player.getEntityData().setInteger(TAG_COOLDOWN, cd - 1);}
+
+	
+	
+				  }
+
+	
+	
+}
+	
+	
+	
+	
+	
+	
