@@ -1,0 +1,42 @@
+package limerence.AdditionalTraits;
+
+import codersafterdark.reskillable.api.skill.Skill;
+import codersafterdark.reskillable.api.unlockable.Unlockable;
+import limerence.AdditionalTraits.skill.SkillAdditionalTraits;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitBloodSacrifice;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitCombatXP;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitDamageResist;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitDivineProtection;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitPact;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitPhaseWalk;
+import limerence.AdditionalTraits.skill.AdditionalTraits.TraitValkyrieBlessing;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+
+
+@EventBusSubscriber
+public class AdditionalTraitsRegistryHandler{
+
+	@SubscribeEvent
+	public static void registerMoreSkills(RegistryEvent.Register<Skill> skillRegister) {
+	System.out.println("Attempting Skill Registry");
+	skillRegister.getRegistry().registerAll(new Skill[]{new SkillAdditionalTraits()});
+	}
+
+	@SubscribeEvent
+	public static void registerMoreTraits(RegistryEvent.Register<Unlockable> unlockablesRegister) {
+		unlockablesRegister.getRegistry().registerAll(new Unlockable[]{new TraitBloodSacrifice(), new TraitCombatXP(),
+		new TraitDamageResist(), new TraitDivineProtection(), new TraitPact(), new TraitPhaseWalk(),
+		new TraitValkyrieBlessing()});
+		System.out.println("MORE TRAITS REGISTERED!");
+	}
+
+
+
+}
+
+
+
+
