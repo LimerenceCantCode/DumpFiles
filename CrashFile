@@ -4,9 +4,9 @@ WARNING: coremods are present:
   LoadingPlugin (Reskillable-1.12.2-1.13.0.jar)
 Contact their authors BEFORE contacting forge
 
-// You should try our sister game, Minceraft!
+// Who set us up the TNT?
 
-Time: 6/30/20 10:53 PM
+Time: 6/30/20 11:22 PM
 Description: Ticking player
 
 java.lang.NoSuchMethodError: net.minecraft.nbt.NBTTagCompound.getInteger(Ljava/lang/String;)I
@@ -20,7 +20,7 @@ java.lang.NoSuchMethodError: net.minecraft.nbt.NBTTagCompound.getInteger(Ljava/l
 	at codersafterdark.reskillable.api.data.PlayerData.forEachEventHandler(PlayerData.java:170)
 	at codersafterdark.reskillable.api.data.PlayerData.tickPlayer(PlayerData.java:134)
 	at codersafterdark.reskillable.api.data.PlayerDataHandler$EventHandler.onPlayerTick(PlayerDataHandler.java:104)
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_29_EventHandler_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_23_EventHandler_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
 	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPostTick(FMLCommonHandler.java:370)
@@ -54,7 +54,7 @@ Stacktrace:
 	at codersafterdark.reskillable.api.data.PlayerData.forEachEventHandler(PlayerData.java:170)
 	at codersafterdark.reskillable.api.data.PlayerData.tickPlayer(PlayerData.java:134)
 	at codersafterdark.reskillable.api.data.PlayerDataHandler$EventHandler.onPlayerTick(PlayerDataHandler.java:104)
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_29_EventHandler_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_23_EventHandler_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
 	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPostTick(FMLCommonHandler.java:370)
@@ -64,10 +64,10 @@ Stacktrace:
 -- Player being ticked --
 Details:
 	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
-	Entity ID: 2196
-	Entity Name: Player
-	Entity's Exact location: -89.63, 68.00, 169.49
-	Entity's Block location: World: (-90,68,169), Chunk: (at 6,4,9 in -6,10; contains blocks -96,0,160 to -81,255,175), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity ID: 2241
+	Entity Name: Zellog
+	Entity's Exact location: 229.62, 73.00, 233.72
+	Entity's Block location: World: (229,73,233), Chunk: (at 5,4,9 in 14,14; contains blocks 224,0,224 to 239,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
 	Entity's Momentum: 0.00, -0.08, 0.00
 	Entity's Passengers: []
 	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
@@ -79,7 +79,7 @@ Stacktrace:
 
 -- Ticking connection --
 Details:
-	Connection: net.minecraft.network.NetworkManager@1c50265f
+	Connection: net.minecraft.network.NetworkManager@2f598fb0
 Stacktrace:
 	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:180)
 	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:790)
@@ -94,7 +94,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_252, GraalVM Community
 	Java VM Version: OpenJDK 64-Bit Server VM GraalVM CE 20.1.0 (mixed mode), GraalVM Community
-	Memory: 7019084872 bytes (6693 MB) / 7879524352 bytes (7514 MB) up to 7923040256 bytes (7556 MB)
+	Memory: 6159739656 bytes (5874 MB) / 7771521024 bytes (7411 MB) up to 7923040256 bytes (7556 MB)
 	JVM Flags: 5 total; -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms5000m -Xmx8500m
 	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
 	FML: MCP 9.42 Powered by Forge 14.23.5.2854 11 mods loaded, 11 mods active
@@ -119,6 +119,6 @@ LoadingPlugin (Reskillable-1.12.2-1.13.0.jar)
   codersafterdark.reskillable.base.asm.ClassTransformer
 	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
 	Profiler Position: N/A (disabled)
-	Player Count: 1 / 8; [EntityPlayerMP['Player'/2196, l='New World', x=-89.63, y=68.00, z=169.49]]
+	Player Count: 1 / 8; [EntityPlayerMP['Player'/2241, l='New World', x=229.62, y=73.00, z=233.72]]
 	Type: Integrated Server (map_client.txt)
 	Is Modded: Definitely; Client brand changed to 'fml,forge'
