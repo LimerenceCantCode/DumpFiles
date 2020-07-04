@@ -21,8 +21,8 @@ public class TraitBloodSacrifice extends Trait {
 	//another case of monkey see, monkey code. Several assumptions made about How/Whys of UUID, could code it up in a different event to test, but low priority														
 	public static final UUID MODIFIER_UUID = UUID.fromString("29cc66d5-b9b6-4f77-9f52-37ca5275cb79");
 	
-	//have tried variations, including .post and .pre which assume are for more complex operations than a single modifier, but hey i only have a vague idea what i'm doing, doesnt hurt to try
-	
+	//have tried variations, including .post and .pre which assume are for more complex operations than a single modifier, 
+	//but hey I only have a vague idea what I'm doing, doesnt hurt to try
 	public void onUnlock(UnlockUnlockableEvent event) {
 	
 	EntityPlayer player = (EntityPlayer) event.getEntity();
