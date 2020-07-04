@@ -27,7 +27,7 @@ public class TraitBloodSacrifice extends Trait {
 	EntityPlayer player = (EntityPlayer) event.getEntity();
 	IAttributeInstance maxHealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
 	AttributeModifier modifier = maxHealth.getModifier(MODIFIER_UUID);
-	modifier = new AttributeModifier(MODIFIER_UUID, "Blood Sacrifice Max HP Reduction",	-4.0D, 0);
+	modifier = new AttributeModifier(MODIFIER_UUID, "Blood Sacrifice Max HP Reduction", -4.0D, 0);
 		
 		if (!event.isCanceled()) {
 		System.out.println("Attempting HP reduction");
