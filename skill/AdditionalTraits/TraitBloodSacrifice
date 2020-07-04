@@ -21,7 +21,8 @@ public class TraitBloodSacrifice extends Trait {
 															
 	public static final UUID MODIFIER_UUID = UUID.fromString("29cc66d5-b9b6-4f77-9f52-37ca5275cb79");
 	
-		
+	//have tried variations, including .post and .pre which assume are for more complex operations than a single modifier, but hey i only have a vague idea what i'm doing, doesnt hurt to try
+	
 	public void onUnlock(UnlockUnlockableEvent event) {
 	
 	EntityPlayer player = (EntityPlayer) event.getEntity();
