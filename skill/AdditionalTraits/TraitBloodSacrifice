@@ -15,7 +15,7 @@ public class TraitBloodSacrifice extends Trait {
 	public TraitBloodSacrifice() {
 		super(new ResourceLocation("AdditionalTraits", "blood_sacrifice"), 3, 2, 
 				new ResourceLocation("reskillable", "attack"), 8, 
-				new String[]{"reskillable:attack|16", "reskillable:defense|16", "reskillable:agility|12"});
+				new String[]{"reskillable:attack|2", "reskillable:defense|2", "reskillable:agility|2"});
 	}
 	
 															
