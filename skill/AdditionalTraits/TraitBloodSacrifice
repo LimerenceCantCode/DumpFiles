@@ -30,7 +30,7 @@ public class TraitBloodSacrifice extends Trait {
 	modifier = new AttributeModifier(MODIFIER_UUID, "Blood Sacrifice Max HP Reduction", -4.0D, 0);
 		
 		if (!event.isCanceled()) {
-		System.out.println("Attempting HP reduction");
+		System.out.println("Attempting HP reduction (event fire check)");
 		maxHealth.applyModifier(modifier);
 			
 			
