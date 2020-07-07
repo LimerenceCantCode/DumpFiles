@@ -1,7 +1,6 @@
 package limerence.AdditionalTraits;
 
 
-
 import org.apache.logging.log4j.Logger;
 
 import codersafterdark.reskillable.ReskillableModAccess;
@@ -13,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 
 
 @Mod(modid = "at", name = "AdditionalTraits", version = "1.0", acceptedMinecraftVersions = "[1.12.2]")
@@ -45,4 +45,5 @@ public class AdditionalTraits {
 	public void serverStarting(FMLServerStartingEvent event) {
 		proxy.serverStarting(event);
 	}
-}
+
+	
