@@ -1,0 +1,16 @@
+package limerence.AdditionalTraits.event;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
+
+@Mod.EventBusSubscriber
+public class EventHandler {
+	
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+		public void onRespawn(PlayerRespawnEvent event) {
+		System.out.println("Respawn Event Fired");
+	}
+
+}
