@@ -65,7 +65,7 @@ public class TraitBloodSacrifice extends Trait {
 	
 	@SubscribeEvent
 	public void onRespawn(PlayerRespawnEvent event) {
-	System.out.println("Class File Respawn");
+	System.out.println("Trait Usage Respawn Fired");
 	EntityPlayer player = event.player;
 	IAttributeInstance maxHealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
 	IAttributeInstance luck = player.getEntityAttribute(SharedMonsterAttributes.LUCK);
