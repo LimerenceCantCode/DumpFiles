@@ -62,8 +62,8 @@ public class TraitBloodSacrifice extends Trait {
 	}
 			
 
-	//what do i put here? any @ annotations? nothing? shouldnt it be able to use it like this with the event handler set up?
 	
+	@SubscribeEvent
 	public void onRespawn(PlayerRespawnEvent event) {
 	System.out.println("Class File Respawn");
 	EntityPlayer player = event.player;
