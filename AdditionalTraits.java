@@ -15,6 +15,8 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 
 
+//main
+
 @Mod(modid = "at", name = "AdditionalTraits", version = "1.0", acceptedMinecraftVersions = "[1.12.2]")
 public class AdditionalTraits {
 	@SidedProxy(serverSide = "limerence.AdditionalTraits.proxy.CommonProxy", clientSide = "limerence.AdditionalTraits.proxy.ClientProxy")
