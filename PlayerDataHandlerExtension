@@ -1,0 +1,20 @@
+package limerence.AdditionalTraits.api.data;
+
+import codersafterdark.reskillable.api.data.PlayerData;
+import codersafterdark.reskillable.api.data.PlayerDataHandler;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
+
+ class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
+	
+    @SubscribeEvent
+    public static void onRespawn(PlayerRespawnEvent event) {
+            PlayerData data = PlayerDataHandler.get((EntityPlayer) event.player);
+            if (data != null) {
+                ((PlayerDataExtension) data).respawn(event);
+            }
+        }
+	
+
+}
