@@ -6,7 +6,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 
- class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
+public class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
 	
 	
 	//Creates ClassCastException at runtime.
