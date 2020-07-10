@@ -1,16 +1,20 @@
-package limerence.AdditionalTraits.event;
+package limerence.AdditionalTraits.api.data;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import codersafterdark.reskillable.api.data.PlayerData;
+import codersafterdark.reskillable.api.data.PlayerDataHandler;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 
-
-public class EventHandler {
+ class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
 	
-	@SubscribeEvent(priority = EventPriority.NORMAL)
-		public void onRespawn(PlayerRespawnEvent event) {
-		System.out.println("Respawn Event Fired");
-	}
+    @SubscribeEvent
+    public static void onRespawn(PlayerRespawnEvent event) {
+            PlayerData data = PlayerDataHandler.get((EntityPlayer) event.player);
+            if (data != null) {
+                ((PlayerDataExtension) data).respawn(event);
+            }
+        }
+	
 
 }
