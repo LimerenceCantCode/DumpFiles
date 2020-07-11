@@ -5,20 +5,22 @@ import codersafterdark.reskillable.api.data.PlayerDataHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
+	
+public class PlayerDataHandlerExtension extends PlayerDataHandler {
+	
+//Creates ClassCastException at runtime. I understand why (somewhat) but dont see a way to avoid it.
 
-public class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
-	
-	
-	//Creates ClassCastException at runtime. I understand why (somewhat) but dont see a way to avoid it.
-	
-	
+	public static class EventHandler extends PlayerDataHandler.EventHandler {
     @SubscribeEvent
     public static void onRespawn(PlayerRespawnEvent event) {
-            PlayerData data = PlayerDataHandler.get((EntityPlayer) event.player);
+    	System.out.println("Handler RESPAWN 1");
+            PlayerDataExtension data = (PlayerDataExtension) PlayerDataHandlerExtension.get((EntityPlayer) event.player);
             if (data != null) {
-                ((PlayerDataExtension) data).respawn(event);
+                 data.respawn(event);
+             	System.out.println("Handler RESPAWN 2");
             }
         }
 	
 
+}
 }
