@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 public class PlayerDataHandlerExtension extends PlayerDataHandler.EventHandler {
 	
 	
-	//Creates ClassCastException at runtime.
+	//Creates ClassCastException at runtime. I understand why (somewhat) but dont see a way to avoid it.
 	
 	
     @SubscribeEvent
