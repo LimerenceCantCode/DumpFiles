@@ -40,3 +40,32 @@ public class TraitDivineProtection extends Trait {
 	
 	
 }
+
+
+
+	
+		if ((e.getAbsorptionAmount() < 9.0F) && (e.ticksExisted % TickForRegen == 0) && e.getMaxHealth() == e.getHealth() && Active == false) {
+			Active = true; TickForRegen = 15; 
+			event.player.world.playSound((EntityPlayer)null, event.player.posX, event.player.posY, event.player.posZ, SoundEvents.ENTITY_ZOMBIE_VILLAGER_CONVERTED, SoundCategory.PLAYERS, 0.50F, 15.0F);
+			}
+		else if ((e.getAbsorptionAmount() < 9.0F) && (e.ticksExisted % TickForRegen == 0) && e.getMaxHealth() == e.getHealth() && Active == true) {
+			e.setAbsorptionAmount(e.getAbsorptionAmount()+1.0F); 
+			event.player.world.playSound((EntityPlayer)null, event.player.posX, event.player.posY, event.player.posZ, SoundEvents.ENTITY_ZOMBIE_VILLAGER_CONVERTED, SoundCategory.PLAYERS, 0.50F, 15.0F);
+			TickForRegen = 10; }
+		else if ((e.getAbsorptionAmount() < 10.0F) && (e.ticksExisted % TickForRegen == 0) && e.getMaxHealth() == e.getHealth() && Active == true) {
+			e.setAbsorptionAmount(e.getAbsorptionAmount()+1.0F); 
+			
+			//CHECK GuiIngame.class client/gui
+			
+		}
+		}
+	
+	
+	
+}
+
+
+
+
+
+
