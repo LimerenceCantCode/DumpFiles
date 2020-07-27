@@ -1,0 +1,35 @@
+	public static void CastLine(final EntityPlayer player, final boolean isClient){
+		
+		if (isClient == false) {
+		EntityFishHook realHook = new EntityFishHook(player.world, player);
+		player.world.spawnEntity(realHook);
+		CurrentHook = realHook;
+		if (player.fishEntity != null) {
+		
+		float f = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch);
+		float f1 = player.prevRotationYaw + (player.rotationYaw - player.prevRotationYaw);
+		float f2 = MathHelper.cos(-f1 * 0.017453292F - 3.1415927F);
+		float f3 = MathHelper.sin(-f1 * 0.017453292F - 3.1415927F);
+		float f4 = -MathHelper.cos(-f * 0.017453292F);
+		float f5 = MathHelper.sin(-f * 0.017453292F);
+		double d0 = player.prevPosX + (player.posX - player.prevPosX) - (double) f3 * 0.3D;
+		double d1 = player.prevPosY + (player.posY - player.prevPosY)
+				+ (double) player.getEyeHeight();
+		double d2 = player.prevPosZ + (player.posZ - player.prevPosZ) - (double) f2 * 0.3D;
+		realHook.setLocationAndAngles(d0, d1, d2, f1, f);
+		realHook.motionX = (double) (-f3);
+		realHook.motionY = (double) MathHelper.clamp(-(f5 / f4), -5.0F, 5.0F);
+		realHook.motionZ = (double) (-f2);
+		float f6 = MathHelper
+				.sqrt(realHook.motionX * realHook.motionX + realHook.motionY * realHook.motionY + realHook.motionZ * realHook.motionZ);
+		realHook.motionX *= 0.6D / (double) f6 + 0.5D + player.getRNG().nextGaussian() * 0.0045D;
+		realHook.motionY *= 0.6D / (double) f6 + 0.5D + player.getRNG().nextGaussian() * 0.0045D;
+		realHook.motionZ *= 0.6D / (double) f6 + 0.5D + player.getRNG().nextGaussian() * 0.0045D;
+		float f7 = MathHelper.sqrt(realHook.motionX * realHook.motionX + realHook.motionZ * realHook.motionZ);
+		realHook.rotationYaw = (float) (MathHelper.atan2(realHook.motionX, realHook.motionZ) * 57.29577951308232D);
+		realHook.rotationPitch = (float) (MathHelper.atan2(realHook.motionY, (double) f7) * 57.29577951308232D);
+		realHook.prevRotationYaw = realHook.rotationYaw;
+		realHook.prevRotationPitch = realHook.rotationPitch;
+		
+		
+		}
