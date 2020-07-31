@@ -125,7 +125,7 @@ public class EntityNatFishHook extends Entity implements IThrowableEntity {
 			double d1 = angler.prevPosY + (angler.posY - angler.prevPosY)
 					+ (double) angler.getEyeHeight();
 			double d2 = angler.prevPosZ + (angler.posZ - angler.prevPosZ) - (double) f2 * 0.3D;
-			setLocationAndAngles(2, 2, 2, 2, 2);
+			setLocationAndAngles(d0, d1, d2, f1, f);
 			motionX = (double) (-f3);
 			motionY = (double) MathHelper.clamp(-(f5 / f4), -5.0F, 5.0F);
 			motionZ = (double) (-f2);
