@@ -1,0 +1,15 @@
+package limerence.AdditionalTraits.util.handlers;
+
+import limerence.AdditionalTraits.AdditionalTraits;
+import limerence.AdditionalTraits.entity.EntityNatFishHook;
+import limerence.AdditionalTraits.render.EntityNatFishHookRenderer;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod.EventBusSubscriber(modid = AdditionalTraits.MOD_ID)
+public class RenderHandlerForHook {
+	
+	public static void registerEntityRenderers() {
+		RenderingRegistry.registerEntityRenderingHandler(EntityNatFishHook.class, EntityNatFishHookRenderer::new);
+	}
+}
