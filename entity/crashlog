@@ -1,0 +1,613 @@
+[13:01:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:01:50] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2854 for Minecraft 1.12.2 loading
+[13:01:50] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM GraalVM CE 20.1.0, version 1.8.0_252, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\GRAAL\graalvm-ce-java8-20.1.0\jre
+[13:01:50] [main/INFO] [FML]: Searching C:\Users\Erik\Desktop\New Folder (6)\MultiMC\instances\1.12.21\.minecraft\mods for mods
+[13:01:50] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in Reskillable-1.12.2-1.13.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[13:01:50] [main/WARN] [FML]: The coremod codersafterdark.reskillable.base.asm.LoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[13:01:50] [main/WARN] [FML]: The coremod LoadingPlugin (codersafterdark.reskillable.base.asm.LoadingPlugin) is not signed!
+[13:01:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[13:01:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[13:01:52] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[13:01:52] [main/INFO] [FML]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[13:01:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[13:01:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[13:01:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[13:01:52] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[13:01:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[13:01:52] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[13:01:53] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Zellog
+[13:01:55] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[13:01:55] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[13:01:56] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_252, GraalVM Community
+	Java VM Version: OpenJDK 64-Bit Server VM GraalVM CE 20.1.0 (mixed mode), GraalVM Community
+	Memory: 4473888360 bytes (4266 MB) / 5052039168 bytes (4818 MB) up to 7923040256 bytes (7556 MB)
+	JVM Flags: 5 total; -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms5000m -Xmx8500m
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+LoadingPlugin (Reskillable-1.12.2-1.13.0.jar)
+  codersafterdark.reskillable.base.asm.ClassTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 445.87' Renderer: 'GeForce GTX 1070/PCIe/SSE2'
+[13:01:56] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2854 Initialized
+[13:01:56] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[13:01:56] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[13:01:56] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[13:01:56] [Client thread/INFO] [FML]: Searching C:\Users\Erik\Desktop\New Folder (6)\MultiMC\instances\1.12.21\.minecraft\mods for mods
+[13:01:57] [Client thread/INFO] [FML]: Forge Mod Loader has identified 12 mods to load
+[13:01:57] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, at, compatskills, ctgui, crafttweaker, crafttweakerjei, potioncore, reskillable, tellme] at CLIENT
+[13:01:57] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, at, compatskills, ctgui, crafttweaker, crafttweakerjei, potioncore, reskillable, tellme] at SERVER
+[13:01:58] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AdditionalTraits, FMLFileResourcePack:CompatSkills, FMLFileResourcePack:CT-GUI, FMLFileResourcePack:CraftTweaker2, FMLFileResourcePack:CraftTweaker JEI Support, FMLFileResourcePack:Potion Core, FMLFileResourcePack:Reskillable, FMLFileResourcePack:Tell Me
+[13:01:58] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[13:01:58] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[13:01:58] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[13:01:58] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[13:01:58] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[13:01:58] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[13:01:58] [Thread-4/INFO] [FML]: Using sync timing. 200 frames of Display.update took 116953000 nanos
+[13:01:58] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[13:01:59] [Client thread/INFO] [tellme]: Registering the client-side command
+[13:01:59] [Client thread/INFO] [FML]: Applying holder lookups
+[13:01:59] [Client thread/INFO] [FML]: Holder lookups applied
+[13:01:59] [Client thread/INFO] [FML]: Applying holder lookups
+[13:01:59] [Client thread/INFO] [FML]: Holder lookups applied
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `nathook`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `saturation`, expected `potioncore`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.util.handlers.AdditionalTraitsRegistryHandler:registerMoreSkills:34]: Attempting Skill Registry
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `additionaltraits`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `blood_sacrifice`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `combat_xp`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `damage_resist`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `health_increase`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `black_blood`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `brewing_speed`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `divine_protection`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `pact`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `master_enchanter`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `holy_rush`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `phase_walk`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `global_xp`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `additionaltraits` for name `natural_fisher`, expected `at`. This could be a intended override, but in most cases indicates a broken mod.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:attack|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:defense|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/ERROR] [reskillable]: Requirement Format Exception (reskillable:agility|1): Level must be greater than 1. Found: '1'.
+[13:01:59] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.util.handlers.AdditionalTraitsRegistryHandler:registerMoreTraits:45]: MORE TRAITS REGISTERED!
+[13:01:59] [Client thread/INFO] [FML]: Applying holder lookups
+[13:01:59] [Client thread/INFO] [FML]: Holder lookups applied
+[13:01:59] [Client thread/INFO] [FML]: Applying holder lookups
+[13:01:59] [Client thread/INFO] [FML]: Holder lookups applied
+[13:01:59] [Client thread/INFO] [FML]: Injecting itemstacks
+[13:01:59] [Client thread/INFO] [FML]: Itemstack injection complete
+[13:02:00] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[13:02:00] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[13:02:00] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:02:00] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[13:02:00] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[13:02:04] [Client thread/INFO] [FML]: Max texture size: 16384
+[13:02:10] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[13:02:11] [Client thread/INFO] [FML]: Applying holder lookups
+[13:02:11] [Client thread/INFO] [FML]: Holder lookups applied
+[13:02:11] [Client thread/INFO] [FML]: Injecting itemstacks
+[13:02:11] [Client thread/INFO] [FML]: Itemstack injection complete
+[13:02:11] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 12 mods
+[13:02:11] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[13:02:11] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[14:09:02] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[14:09:02] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[14:09:02] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[14:09:02] [Server thread/INFO] [FML]: Applying holder lookups
+[14:09:02] [Server thread/INFO] [FML]: Holder lookups applied
+[14:09:03] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@7c5fa9b4)
+[14:09:03] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 490 advancements
+[14:09:03] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@7c5fa9b4)
+[14:09:03] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@7c5fa9b4)
+[14:09:03] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[14:09:04] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/106, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:04] [Server thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) [EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) [EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntry.newInstance(EntityEntry.java:68) [EntityEntry.class:?]
+	at net.minecraft.entity.EntityList.func_188429_b(EntityList.java:204) [vi.class:?]
+	at net.minecraft.entity.EntityList.func_75615_a(EntityList.java:211) [vi.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.func_186053_a(AnvilChunkLoader.java:602) [aye.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.func_186050_a(AnvilChunkLoader.java:529) [aye.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.loadEntities(AnvilChunkLoader.java:486) [aye.class:?]
+	at net.minecraftforge.common.chunkio.ChunkIOProvider.syncCallback(ChunkIOProvider.java:101) [ChunkIOProvider.class:?]
+	at net.minecraftforge.common.chunkio.ChunkIOExecutor.syncChunkLoad(ChunkIOExecutor.java:94) [ChunkIOExecutor.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:118) [on.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186028_c(ChunkProviderServer.java:89) [on.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:135) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:142) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:156) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_252]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 22 more
+[14:09:04] [Server thread/WARN] [net.minecraft.entity.EntityList]: Skipping Entity with id minecraft:nathook
+[14:09:04] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/107, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:04] [Server thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) [EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) [EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntry.newInstance(EntityEntry.java:68) [EntityEntry.class:?]
+	at net.minecraft.entity.EntityList.func_188429_b(EntityList.java:204) [vi.class:?]
+	at net.minecraft.entity.EntityList.func_75615_a(EntityList.java:211) [vi.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.func_186053_a(AnvilChunkLoader.java:602) [aye.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.func_186050_a(AnvilChunkLoader.java:529) [aye.class:?]
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.loadEntities(AnvilChunkLoader.java:486) [aye.class:?]
+	at net.minecraftforge.common.chunkio.ChunkIOProvider.syncCallback(ChunkIOProvider.java:101) [ChunkIOProvider.class:?]
+	at net.minecraftforge.common.chunkio.ChunkIOExecutor.syncChunkLoad(ChunkIOExecutor.java:94) [ChunkIOExecutor.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:118) [on.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186028_c(ChunkProviderServer.java:89) [on.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:135) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:142) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:156) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_252]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 22 more
+[14:09:04] [Server thread/WARN] [net.minecraft.entity.EntityList]: Skipping Entity with id minecraft:nathook
+[14:09:04] [Server thread/INFO] [FML]: Unloading dimension -1
+[14:09:04] [Server thread/INFO] [FML]: Unloading dimension 1
+[14:09:04] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 20, from 10
+[14:09:06] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[14:09:06] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[14:09:06] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 12 mods : minecraft@1.12.2,crafttweaker@4.1.20,at@@VERSION@,ctgui@1.0.0,FML@8.0.99.99,crafttweakerjei@2.0.3,forge@14.23.5.2854,potioncore@1.9_for_1.12.2,mcp@9.42,compatskills@1.12.2-1.17.0,tellme@0.7.0-dev.20190610.165828,reskillable@1.12.2-1.13.0
+[14:09:06] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[14:09:06] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[14:09:06] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Zellog[local:E:e68c8528] logged in with entity id 171 at (203.3266395541128, 63.0, 264.48799969721273)
+[14:09:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Zellog joined the game
+[14:09:06] [Netty Local Client IO #0/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 490 advancements
+[14:09:08] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[14:09:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[14:09:16] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/776, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:16] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/777, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:16] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/778, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:16] [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityRegistry$EntityRegistration.newInstance(EntityRegistry.java:99) ~[EntityRegistry$EntityRegistration.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:87) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 30 more
+[14:09:16] [Client thread/FATAL] [net.minecraft.client.Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (205.39479803727806, 64.53999996185303, 267.6320502763888)
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:47) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (205.39479803727806, 64.53999996185303, 267.6320502763888)
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:135) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:89) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+[14:09:24] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/806, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:24] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/807, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:24] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/808, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:24] [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityRegistry$EntityRegistration.newInstance(EntityRegistry.java:99) ~[EntityRegistry$EntityRegistration.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:87) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 30 more
+[14:09:24] [Client thread/FATAL] [net.minecraft.client.Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.3595915069705, 64.53999996185303, 267.92750430271303)
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:47) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.3595915069705, 64.53999996185303, 267.92750430271303)
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:135) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:89) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+[14:09:25] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/809, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/810, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/811, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityRegistry$EntityRegistration.newInstance(EntityRegistry.java:99) ~[EntityRegistry$EntityRegistration.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:87) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 30 more
+[14:09:25] [Client thread/FATAL] [net.minecraft.client.Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.68283817673978, 64.53999996185303, 267.981058271381)
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:47) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.68283817673978, 64.53999996185303, 267.981058271381)
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:135) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:89) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+[14:09:25] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/812, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/813, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/814, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:25] [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityRegistry$EntityRegistration.newInstance(EntityRegistry.java:99) ~[EntityRegistry$EntityRegistration.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:87) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 30 more
+[14:09:25] [Client thread/FATAL] [net.minecraft.client.Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.36296479607878, 64.53999996185303, 267.9305493252007)
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:47) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.36296479607878, 64.53999996185303, 267.9305493252007)
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:135) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:89) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+[14:09:26] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/815, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:26] [Server thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/816, l='New World', x=0.00, y=0.00, z=0.00]
+[14:09:26] [Client thread/INFO] [STDOUT]: [limerence.AdditionalTraits.entity.EntityNatFishHook:init:102]: EntityHook is EntityNatFishHook['entity.nathook.name'/817, l='MpServer', x=0.00, y=0.00, z=0.00]
+[14:09:26] [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'minecraft:nathook'
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_252]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_252]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:305) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityEntryBuilder$ConstructorFactory.apply(EntityEntryBuilder.java:291) ~[EntityEntryBuilder$ConstructorFactory.class:?]
+	at net.minecraftforge.fml.common.registry.EntityRegistry$EntityRegistration.newInstance(EntityRegistry.java:99) ~[EntityRegistry$EntityRegistration.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:87) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.NullPointerException
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.shoot(EntityNatFishHook.java:110) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:82) ~[EntityNatFishHook.class:1.12.2]
+	at limerence.AdditionalTraits.entity.EntityNatFishHook.<init>(EntityNatFishHook.java:86) ~[EntityNatFishHook.class:1.12.2]
+	... 30 more
+[14:09:26] [Client thread/FATAL] [net.minecraft.client.Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.27149360085784, 64.53999996185303, 267.6326119305221)
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:47) [h.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_252]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_252]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_252]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_252]
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
+Caused by: java.lang.RuntimeException: A severe problem occurred during the spawning of an entity at (207.27149360085784, 64.53999996185303, 267.6326119305221)
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:135) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.spawnEntity(EntitySpawnHandler.java:89) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.process(EntitySpawnHandler.java:64) ~[EntitySpawnHandler.class:?]
+	at net.minecraftforge.fml.common.network.internal.EntitySpawnHandler.lambda$channelRead0$0(EntitySpawnHandler.java:55) ~[EntitySpawnHandler.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_252]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_252]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:46) ~[h.class:?]
+	... 17 more
+[14:09:29] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[14:09:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[14:09:30] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[14:09:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[14:09:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[14:09:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[14:09:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[14:09:30] [Server thread/INFO] [FML]: Unloading dimension 0
+[14:09:30] [Server thread/INFO] [FML]: Applying holder lookups
+[14:09:30] [Server thread/INFO] [FML]: Holder lookups applied
+[14:09:30] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[14:09:31] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
