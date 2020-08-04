@@ -3,8 +3,10 @@ package limerence.AdditionalTraits.entity;
 
 import java.util.Iterator;
 import java.util.List;
+
+import javax.xml.ws.spi.Invoker;
+
 import limerence.AdditionalTraits.entity.events.DifferentItemFishedEvent;
-import limerence.AdditionalTraits.skill.AdditionalTraits.TraitNaturalFisher;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -13,7 +15,6 @@ import net.minecraft.entity.MoverType;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
@@ -35,15 +36,12 @@ import net.minecraft.world.WorldServer;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.LootContext.Builder;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.registry.IThrowableEntity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class EntityNatFishHook extends Entity{
 	
-	public EntityNatFishHook(World world) {
-	super(world);
-	}
 	
 	
 	
@@ -51,7 +49,7 @@ public class EntityNatFishHook extends Entity{
 
 		private boolean inGround;
 		private int ticksInGround;
-		public EntityPlayer angler;
+		private EntityPlayer angler;
 		private int ticksInAir;
 		private int ticksCatchable;
 		private int ticksCaughtDelay;
@@ -62,17 +60,8 @@ public class EntityNatFishHook extends Entity{
 		private int luck;
 		private int lureSpeed; 
 
-		public EntityNatFishHook CurrentHook;
-		
-		
-		
-	    public enum State {
-	        FLYING,
-	        HOOKED_IN_ENTITY,
-	        BOBBING;
-	    }
 
-
+	    static enum State {FLYING, HOOKED_IN_ENTITY, BOBBING;}
 	    
 		@SideOnly(Side.CLIENT)
 		public EntityNatFishHook(World world, EntityPlayer player, double x, double y, double z) {
@@ -92,6 +81,10 @@ public class EntityNatFishHook extends Entity{
 			this.init(player);
 			this.shoot();
 		}
+		
+		public EntityNatFishHook(World world) {
+			this(world, null);
+		}
 
 		public void setLureSpeed(int speed) {
 			this.lureSpeed = speed;
@@ -102,12 +95,11 @@ public class EntityNatFishHook extends Entity{
 		}
 		
 
-		private void init(EntityPlayer player) {
+		private void init(EntityPlayer p_190626_1_) {
 			this.setSize(0.25F, 0.25F);
 			this.ignoreFrustumCheck = true;
-			this.angler = player;
-			CurrentHook = this;
-			System.out.println("EntityHook is " +this.CurrentHook+" at init");
+			this.angler = p_190626_1_;
+			System.out.println("EntityHook is " +this);
 			
 
 			}
@@ -115,16 +107,16 @@ public class EntityNatFishHook extends Entity{
 	
 		//why this is causing a crash? i have no fucking idea
 		private void shoot() {
-			float f = angler.prevRotationPitch + (angler.rotationPitch - angler.prevRotationPitch);
-			float f1 = angler.prevRotationYaw + (angler.rotationYaw - angler.prevRotationYaw);
+			float f = angler.prevRotationPitch + (this.angler.rotationPitch - this.angler.prevRotationPitch);
+			float f1 = this.angler.prevRotationYaw + (this.angler.rotationYaw - this.angler.prevRotationYaw);
 			float f2 = MathHelper.cos(-f1 * 0.017453292F - (float) Math.PI);
 			float f3 = MathHelper.sin(-f1 * 0.017453292F - (float) Math.PI);
 			float f4 = -MathHelper.cos(-f * 0.017453292F);
 			float f5 = MathHelper.sin(-f * 0.017453292F);
-			double d0 = angler.prevPosX + (angler.posX - angler.prevPosX) - (double) f3 * 0.3D;
-			double d1 = angler.prevPosY + (angler.posY - angler.prevPosY)
-					+ (double) angler.getEyeHeight();
-			double d2 = angler.prevPosZ + (angler.posZ - angler.prevPosZ) - (double) f2 * 0.3D;
+			double d0 = this.angler.prevPosX + (this.angler.posX - this.angler.prevPosX) - (double) f3 * 0.3D;
+			double d1 = this.angler.prevPosY + (this.angler.posY - this.angler.prevPosY)
+					+ (double) this.angler.getEyeHeight();
+			double d2 = this.angler.prevPosZ + (this.angler.posZ - this.angler.prevPosZ) - (double) f2 * 0.3D;
 			setLocationAndAngles(d0, d1, d2, f1, f);
 			motionX = (double) (-f3);
 			motionY = (double) MathHelper.clamp(-(f5 / f4), -5.0F, 5.0F);
@@ -265,7 +257,7 @@ public class EntityNatFishHook extends Entity{
 		}
 
 		private boolean shouldStopFishing() {
-			boolean flag = angler.getHeldItemMainhand().isEmpty();
+			boolean flag = this.angler.getHeldItemMainhand().isEmpty();
 			if (!this.angler.isDead && this.angler.isEntityAlive() && (flag)
 					&& this.getDistanceSq(this.angler) <= 1024.0D) {
 				return false;
@@ -474,26 +466,38 @@ public class EntityNatFishHook extends Entity{
 		public void readEntityFromNBT(NBTTagCompound readTagCompound) {
 		}
 
-		public int handleHookRetraction() {
+		public void handleHookRetraction() {
+			System.out.println("Attempting Hook Retraction");
 			if (!this.world.isRemote && this.angler != null) {
-				int i = 0;
+				
 				DifferentItemFishedEvent event = null;
+				
+				System.out.println("Top of Event!");
+				
 				if (this.caughtEntity != null) {
 					this.bringInHookedEntity();
 					this.world.setEntityState(this, (byte) 31);
-					i = this.caughtEntity instanceof EntityItem ? 3 : 5;
-				} else if (this.ticksCatchable > 0) {
+				} 
+				
+				
+				else if (this.ticksCatchable > 0) {
 					Builder lootcontext$builder = new Builder((WorldServer) this.world);
 					lootcontext$builder.withLuck((float) this.luck + this.angler.getLuck()).withPlayer(this.angler)
 							.withLootedEntity(this);
+					
+					
 					List<ItemStack> result = this.world.getLootTableManager()
 							.getLootTableFromLocation(LootTableList.GAMEPLAY_FISHING)
 							.generateLootForPools(this.rand, lootcontext$builder.build());
-					event = new DifferentItemFishedEvent(result, this.inGround ? 2 : 1, this);
+					
+					
+					event = new DifferentItemFishedEvent(result, this);
+					
 					MinecraftForge.EVENT_BUS.post(event);
+					
 					if (event.isCanceled()) {
 						this.setDead();
-						return event.getRodDamage();
+						System.out.println("Hook Should be Retracted!");
 					}
 
 					Iterator var5 = result.iterator();
@@ -502,7 +506,7 @@ public class EntityNatFishHook extends Entity{
 						Item item;
 						do {
 							if (!var5.hasNext()) {
-								i = 1;
+								//output
 								break label50;
 							}
 
@@ -518,7 +522,7 @@ public class EntityNatFishHook extends Entity{
 							entityitem.motionZ = d2 * 0.1D;
 							this.world.spawnEntity(entityitem);
 							this.angler.world.spawnEntity(new EntityXPOrb(this.angler.world, this.angler.posX,
-									this.angler.posY + 0.5D, this.angler.posZ + 0.5D, this.rand.nextInt(6) + 1));
+							this.angler.posY + 0.5D, this.angler.posZ + 0.5D, this.rand.nextInt(6) + 1));
 							item = itemstack.getItem();
 						} while (item != Items.FISH && item != Items.COOKED_FISH);
 
@@ -526,15 +530,8 @@ public class EntityNatFishHook extends Entity{
 					}
 				}
 
-				if (this.inGround) {
-					i = 2;
-				}
-
-				this.setDead();
-				return event == null ? i : event.getRodDamage();
-			} else {
-				return 0;
 			}
+			this.setDead();
 		}
 
 		@SideOnly(Side.CLIENT)
@@ -566,8 +563,10 @@ public class EntityNatFishHook extends Entity{
 
 		public void setDead() {
 			super.setDead();
+			
+			System.out.println("Killed "+this);
 			if (this.angler != null) {
-				this.CurrentHook = null;
+				//TODO
 			}
 
 		}
