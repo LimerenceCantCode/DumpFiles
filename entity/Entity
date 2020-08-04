@@ -82,9 +82,6 @@ public class EntityNatFishHook extends Entity{
 			this.shoot();
 		}
 		
-		public EntityNatFishHook(World world) {
-			this(world, null);
-		}
 
 		public void setLureSpeed(int speed) {
 			this.lureSpeed = speed;
