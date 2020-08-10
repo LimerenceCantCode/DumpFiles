@@ -169,11 +169,11 @@ public class EntityNatFishHook extends Entity{
 		public void onUpdate() {
 			super.onUpdate();
 			if (this.angler == null) {
-				//System.out.println("Cause of death was OnUpdate");
+				System.out.println("Cause of death was OnUpdate");
 				//TODO: Why is angler becoming null? server and client?
 				//System.out.println("ONUPDATE. Is the world Clientside?" +world.isRemote);
 				//System.out.println("OnUpdate death removed");
-				//this.setDead();
+				this.setDead();
 				//this is implied to be the server side
 			} else if (this.world.isRemote || !this.shouldStopFishing()) {
 				if (this.inGround) {
