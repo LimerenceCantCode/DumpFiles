@@ -1,0 +1,81 @@
+package limerence.AdditionalTraits.util.handlers;
+
+import org.apache.http.client.entity.EntityBuilder;
+
+import limerence.AdditionalTraits.AdditionalTraits;
+import limerence.AdditionalTraits.entity.EntityNatFishHook;
+import limerence.AdditionalTraits.util.init.EntityInit;
+import limerence.AdditionalTraits.util.init.ItemInit;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.projectile.EntityFishHook;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
+//import limerence.AdditionalTraits.init.BiomeInit;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.registries.IForgeRegistryEntry;
+
+
+@EventBusSubscriber
+public class RegistryHandler
+{
+
+   
+    public static void preInitRegistries(FMLPreInitializationEvent event)
+    {
+ 
+    	//BiomeInit.registerBiomes();
+
+    }
+   
+    public static void initRegistries()
+    {
+    	
+    }
+    
+
+    public static void postInitRegistries()
+    {
+    	//BiomeInit.unregisterBiomes();
+    	// ItemInit.RegisterItems();
+    	// System.out.println("Attempting Item Registry");
+    	//event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+    	//event.getRegistry().register(new ResourceLocation(AdditionalTraits.MOD_ID + ":" +"NatHook"), EntityNatFishHook.class, "NatHook", AdditionalTraits.instance, 64, 1, true);
+    	//event.getRegistry().registerAll(EntityInit.ENTITIES.toArray(new EntityEntry[0]))
+    }
+   
+    public static void serverRegistries(FMLServerStartingEvent event)
+    {
+    }
+    
+    @SubscribeEvent
+    public static void onItemRegister(RegistryEvent.Register<Item> event)
+    {	
+    }
+
+    @SubscribeEvent
+    public static void entityRegister(RegistryEvent.Register<EntityEntry> event) {
+    	int id = 38;
+    	
+    	EntityEntry NatHook = EntityEntryBuilder.create()
+    			.entity(EntityNatFishHook.class)
+    			.id(new ResourceLocation("nathook"), id++)
+    			.name("nathook")
+    			.tracker(64, 3, true)
+    			.build();	
+    	
+    	
+    	
+    event.getRegistry().register(NatHook);
+    
+    
+    }
+}
