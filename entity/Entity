@@ -12,6 +12,7 @@ import limerence.AdditionalTraits.api.data.MessageCastLine;
 import limerence.AdditionalTraits.api.data.MessagePlayerServer;
 import limerence.AdditionalTraits.entity.events.DifferentItemFishedEvent;
 import limerence.AdditionalTraits.util.handlers.PacketHandler;
+import limerence.AdditionalTraits.util.init.ItemInit;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -270,8 +271,10 @@ public class EntityNatFishHook extends Entity{
 		}
 
 		private boolean shouldStopFishing() {
+			ItemStack NatHook = new ItemStack(ItemInit.NATHOOK);
 			boolean flag = this.angler.getHeldItemMainhand().isEmpty();
-			if (!this.angler.isDead && this.angler.isEntityAlive() && (flag)
+			boolean flag2 = true;
+			if (!this.angler.isDead && this.angler.isEntityAlive() && (flag||flag2)
 					&& this.getDistanceSq(this.angler) <= 1024.0D) {
 				return false;
 			} else {
