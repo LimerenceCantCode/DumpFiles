@@ -49,10 +49,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 
 public class EntityNatFishHook extends Entity{
-	
-	
-	
-	
+
 	private final static DataParameter<Integer> DATA_HOOKED_ENTITY = EntityDataManager.createKey(EntityNatFishHook.class, DataSerializers.VARINT);
 
 		private boolean inGround;
@@ -75,19 +72,26 @@ public class EntityNatFishHook extends Entity{
 		
 	
 		
-		static int EmptyINT = 0;
+		
 		
 	    static enum State {FLYING, HOOKED_IN_ENTITY, BOBBING;}
 	    
-
+	    @SideOnly(Side.CLIENT)
+	    public EntityNatFishHook(World world, EntityPlayer player, double x, double y, double z) {
+	        super(world);
+	        this.init(player);
+	        this.setPosition(x, y, z);
+	        this.prevPosX = this.posX;
+	        this.prevPosY = this.posY;
+	        this.prevPosZ = this.posZ;
+	    }
 
 		public EntityNatFishHook(World world, EntityPlayer player) {
 			super(world);
 			this.currentState = State.FLYING;
 			this.init(player);
 			player.getEntityData().setInteger(fishServer, this.getEntityId());
-			System.out.println("POST INIT. Is the world Clientside?" +world.isRemote);
-			System.out.println("POST INIT. Is the player Clientside?" +player.world.isRemote);
+			player.getEntityData().setInteger(fishClient, this.getEntityId());
 			System.out.println("POST INIT. EntityHook is " +this.getEntityId());
 			this.shoot();
 		}
@@ -95,7 +99,7 @@ public class EntityNatFishHook extends Entity{
 		public EntityNatFishHook(World world) {
 			super(world);
 		}
-
+		
 		public void setLureSpeed(int speed) {
 			this.lureSpeed = speed;
 		}
@@ -105,15 +109,13 @@ public class EntityNatFishHook extends Entity{
 		}
 		
 
-		private void init(EntityPlayer p_190626_1_) {
+		private void init(EntityPlayer player) {
 			this.setSize(0.25F, 0.25F);
 			this.ignoreFrustumCheck = true;
-			this.angler = p_190626_1_;
-			System.out.println("INIT. EntityHook is " +this.getEntityId());
-			System.out.println("INIT. Is the player Clientside?" +p_190626_1_.world.isRemote);
+			this.angler = player;
 			}
 
-	
+
 		
 		private void shoot() {
 			float f = angler.prevRotationPitch + (this.angler.rotationPitch - this.angler.prevRotationPitch);
@@ -165,15 +167,16 @@ public class EntityNatFishHook extends Entity{
 		@SideOnly(Side.CLIENT)
 		public void setPositionAndRotationDirect(double x, double y, double z, float yaw, float pitch, int posRotationIncrements, boolean teleport) {
 		}
-
+		
+		@Override
 		public void onUpdate() {
 			super.onUpdate();
 			if (this.angler == null) {
-				System.out.println("Cause of death was OnUpdate");
+				//System.out.println("Cause of death was OnUpdate");
 				//TODO: Why is angler becoming null? server and client?
 				//System.out.println("ONUPDATE. Is the world Clientside?" +world.isRemote);
 				//System.out.println("OnUpdate death removed");
-				this.setDead();
+				//this.setDead();
 				//this is implied to be the server side
 			} else if (this.world.isRemote || !this.shouldStopFishing()) {
 				if (this.inGround) {
@@ -476,10 +479,12 @@ public class EntityNatFishHook extends Entity{
 		protected boolean canBeHooked(Entity entity) {
 			return entity.canBeCollidedWith() || entity instanceof EntityItem;
 		}
-
+		
+		@Override
 		public void writeEntityToNBT(NBTTagCompound writeTagCompound) {
 		}
-
+		
+		@Override
 		public void readEntityFromNBT(NBTTagCompound readTagCompound) {
 		}
 
@@ -551,7 +556,8 @@ public class EntityNatFishHook extends Entity{
 			System.out.println("Cause of death was handleHookRetraction");
 			this.setDead();
 		}
-
+		
+		@Override
 		@SideOnly(Side.CLIENT)
 		public void handleStatusUpdate(byte byted) {
 			if (byted == 31 && this.world.isRemote && this.caughtEntity instanceof EntityPlayer
@@ -578,7 +584,7 @@ public class EntityNatFishHook extends Entity{
 		protected boolean canTriggerWalking() {
 			return false;
 		}
-
+		@Override
 		public void setDead() {
 			super.setDead();
 			System.out.println("Killed "+this);
