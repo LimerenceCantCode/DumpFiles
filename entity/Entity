@@ -18,6 +18,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.MoverType;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.item.EntityXPOrb;
@@ -44,11 +45,12 @@ import net.minecraft.world.WorldServer;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.LootContext.Builder;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.registry.IThrowableEntity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 
-public class EntityNatFishHook extends Entity{
+public class EntityNatFishHook extends Entity implements IThrowableEntity{
 
 	private final static DataParameter<Integer> DATA_HOOKED_ENTITY = EntityDataManager.createKey(EntityNatFishHook.class, DataSerializers.VARINT);
 
@@ -608,6 +610,18 @@ public class EntityNatFishHook extends Entity{
 			}*/
 			
 			}
+
+		@Override
+		public Entity getThrower() {
+			// TODO Auto-generated method stub
+			return this.angler;
+		}
+
+		@Override
+		public void setThrower(Entity var1) {
+			// TODO Auto-generated method stub
+			
+		}
 		
 		
 
