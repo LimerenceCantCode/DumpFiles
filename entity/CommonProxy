@@ -7,29 +7,18 @@ import codersafterdark.reskillable.base.ConfigHandler;
 import codersafterdark.reskillable.base.LevelLockHandler;
 import codersafterdark.reskillable.commands.ReskillableCmd;
 import codersafterdark.reskillable.network.PacketHandler;
-import limerence.AdditionalTraits.AdditionalTraits;
 import limerence.AdditionalTraits.api.data.PlayerDataExtension;
-import limerence.AdditionalTraits.entity.EntityNatFishHook;
-import limerence.AdditionalTraits.render.EntityNatFishHookRenderer;
 import limerence.AdditionalTraits.util.handlers.PlayerDataHandlerExtension;
 import limerence.AdditionalTraits.util.handlers.RegistryHandler;
-import limerence.AdditionalTraits.util.handlers.RenderHandler;
-import limerence.AdditionalTraits.util.handlers.RenderHandlerForHook;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.registry.EntityEntry;
-import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class CommonProxy {
-	int id = 38;
 	
-	
+
 	public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(PlayerDataHandler.EventHandler.class);
         MinecraftForge.EVENT_BUS.register(LevelLockHandler.class);
@@ -39,9 +28,15 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(RegistryHandler.class);
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         PacketHandler.preInit();
- 
+        
         
 	}
+	
+	public void registerModelRenderers() {
+	}
+		
+	
+	
 	public void init(FMLInitializationEvent event) {
         LevelLockHandler.setupLocks();
         RequirementCache.registerDirtyTypes();
@@ -51,6 +46,8 @@ public class CommonProxy {
 	public void postInit(FMLPostInitializationEvent event) {
 
 	}
+	
+
 	
 	public void serverStarting(FMLServerStartingEvent event) {
         event.registerServerCommand(new ReskillableCmd());
