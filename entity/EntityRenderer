@@ -3,7 +3,6 @@ package limerence.AdditionalTraits.render;
 import javax.annotation.Nonnull;
 
 import limerence.AdditionalTraits.entity.EntityNatFishHook;
-import limerence.AdditionalTraits.item.ItemNatHook;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
@@ -12,7 +11,6 @@ import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHandSide;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
@@ -21,24 +19,20 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 
-
-public class EntityNatFishHookRenderer extends Render<EntityNatFishHook> {
-	
-
-    private static final ResourceLocation FISH_HOOK_TEXTURE = new ResourceLocation("textures/particle/particles.png");
-
-    public EntityNatFishHookRenderer(RenderManager renderManager) {
+@SideOnly(Side.CLIENT)
+public class RenderNatFishHook extends Render<EntityNatFishHook> {
+    private static final ResourceLocation FISH_PARTICLES = new ResourceLocation("textures/particle/particles.png");
+    
+    public RenderNatFishHook(RenderManager renderManager) {
         super(renderManager);
     }
 
-
-
     @Override
-    public void doRender(EntityNatFishHook entity, double x, double y, double z, float entityYaw, float partialTicks) {
+    public void doRender(@Nonnull EntityNatFishHook entity, double x, double y, double z, float entityYaw, float partialTicks) {
         EntityPlayer entityplayer = entity.getAngler();
-        //System.out.println("Partial Tick is "+partialTicks);
+        System.out.println("Rendering!");
 
-        if ((entityplayer != null) && (!renderOutlines)) {
+        if ((entityplayer != null) && (!this.renderOutlines)) {
             GlStateManager.pushMatrix();
             GlStateManager.translate((float) x, (float) y, (float) z);
             GlStateManager.enableRescaleNormal();
@@ -46,12 +40,12 @@ public class EntityNatFishHookRenderer extends Render<EntityNatFishHook> {
             this.bindEntityTexture(entity);
             Tessellator tessellator = Tessellator.getInstance();
             BufferBuilder bufferBuilder = tessellator.getBuffer();
-            GlStateManager.rotate(180.0F - this.renderManager.playerViewY, 0.0F, 1.0F, 0.0F);
-            GlStateManager.rotate((this.renderManager.options.thirdPersonView == 2 ? -1 : 1) * -this.renderManager.playerViewX, 1.0F, 0.0F, 0.0F);
+            GlStateManager.rotate(180.0F - renderManager.playerViewY, 0.0F, 1.0F, 0.0F);
+            GlStateManager.rotate((renderManager.options.thirdPersonView == 2 ? -1 : 1) * -renderManager.playerViewX, 1.0F, 0.0F, 0.0F);
 
             if (this.renderOutlines) {
                 GlStateManager.enableColorMaterial();
-                GlStateManager.enableOutlineMode(this.getTeamColor(entity));
+                GlStateManager.enableOutlineMode(getTeamColor(entity));
             }
 
             bufferBuilder.begin(7, DefaultVertexFormats.POSITION_TEX_NORMAL); //Hook
@@ -68,9 +62,9 @@ public class EntityNatFishHookRenderer extends Render<EntityNatFishHook> {
 
             GlStateManager.disableRescaleNormal();
             GlStateManager.popMatrix();
-            int k = 1;
+            int k = entityplayer.getPrimaryHand() == EnumHandSide.RIGHT ? -1 : 1;
             
-            float f7 = 100;
+            float f7 = entityplayer.getSwingProgress(partialTicks);
             float f8 = MathHelper.sin(MathHelper.sqrt(f7) * (float) Math.PI);
             float f9 = (entityplayer.prevRenderYawOffset + (entityplayer.renderYawOffset - entityplayer.prevRenderYawOffset) * partialTicks) * 0.017453292F;
             double d0 = MathHelper.sin(f9);
@@ -128,8 +122,8 @@ public class EntityNatFishHookRenderer extends Render<EntityNatFishHook> {
     }
     
     @Override
-    protected ResourceLocation getEntityTexture(@Nonnull EntityNatFishHook entity) {
-        return FISH_HOOK_TEXTURE;
+    protected ResourceLocation getEntityTexture(EntityNatFishHook entity) {
+        return FISH_PARTICLES;
     }
     
 }
